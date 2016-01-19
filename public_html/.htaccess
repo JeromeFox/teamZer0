@@ -1,0 +1,5 @@
+ErrorDocument 404 http://deepblue.cs.camosun.bc.ca/~comp19900/error
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php[NC,L]
